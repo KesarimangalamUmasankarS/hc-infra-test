@@ -1,0 +1,9 @@
+#Environment Detail#
+environment=nprod
+
+#User Details#
+username=A450689
+
+#URLs#
+url_nprod=https://vault.mgmt.hci.aetna.com/v1/
+url_prod=https://vault.hci.aetna.com/v1/

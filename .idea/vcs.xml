@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/awsSession/pkg/github.com/aws/aws-sdk-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/awsSession/pkg/github.com/jmespath/go-jmespath" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/github.com/aws/aws-sdk-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/github.com/jmespath/go-jmespath" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/pkg/aws/aws-sdk-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/pkg/github.com/aws/aws-sdk-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/pkg/github.com/jmespath/go-jmespath" vcs="Git" />
   </component>
 </project>
