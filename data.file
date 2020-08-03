@@ -1,1 +1,3 @@
-path="kv/"
+#Data#
+secretpath=kv/qa/testMember
+secret=password

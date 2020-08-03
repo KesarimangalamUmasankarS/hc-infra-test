@@ -2,7 +2,6 @@ package libraries
 
 import (
 	"bufio"
-	"bytes"
 	"encoding/json"
 	"log"
 	"net/http"
@@ -10,18 +9,16 @@ import (
 	"strings"
 )
 
-func VaultConnection() map[string]interface{}{
+func GetSecret(x_vault_token string) map[string]interface{}{
 
-	username := GetConfig("username")
+	path := GetData("secretpath")
 	env := GetConfig("environment")
 	url := GetConfig("url_"+env)
-	path := "auth/ldap/aeth/login"
 
-
-	data := []byte(`{"password": "Kailash123"}`)
-	datavar := bytes.NewBuffer(data)
 	client := &http.Client{}
-	resp, err := client.Post(url+path+"/"+username, "application/json", datavar)
+	req, _ := http.NewRequest("POST", url+path, nil)
+	req.Header.Set("X-Vault-Token", x_vault_token)
+	resp, err := client.Do(req)
 
 	if err != nil {
 		panic(err)
@@ -34,11 +31,11 @@ func VaultConnection() map[string]interface{}{
 	return res
 }
 
-func GetConfig(key string) string{
+func GetData(key string) string{
 	var value []string
 
 	pwd, _ := os.Getwd()
-	file, err := os.Open(pwd+"/config.file")
+	file, err := os.Open(pwd+"/data.file")
 	if err != nil {
 		log.Fatalf("failed opening file: %s", err)
 	}
