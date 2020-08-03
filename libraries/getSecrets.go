@@ -9,6 +9,11 @@ import (
 	"strings"
 )
 
+/*
+    Send the Vault Token and retrieve  the secret from the  specified path
+	Data can be pulled from data.file
+*/
+
 func GetSecret(x_vault_token string) map[string]interface{}{
 
 	path := GetData("secretpath")

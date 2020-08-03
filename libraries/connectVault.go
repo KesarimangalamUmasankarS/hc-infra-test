@@ -10,6 +10,11 @@ import (
 	"strings"
 )
 
+/*
+    Send the LDAP credentials to Vault to retrieve the Vault Token
+	Configuration details - env, url, and username can be retrieved from config.file
+*/
+
 func VaultConnection() map[string]interface{}{
 
 	username := GetConfig("username")
@@ -18,7 +23,7 @@ func VaultConnection() map[string]interface{}{
 	path := "auth/ldap/aeth/login"
 
 
-	data := []byte(`{"password": "Kailash123"}`)
+	data := []byte(`{"password": ""}`)
 	datavar := bytes.NewBuffer(data)
 	client := &http.Client{}
 	resp, err := client.Post(url+path+"/"+username, "application/json", datavar)
