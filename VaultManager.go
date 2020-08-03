@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	XVaultToken := libraries.VaultConnection()
-	fmt.Println(XVaultToken)
+	XVaultToken_JSON:= libraries.VaultConnection()
+	fmt.Println(XVaultToken_JSON)
 
 }

@@ -18,7 +18,7 @@ func VaultConnection() map[string]interface{}{
 	path := "auth/ldap/aeth/login"
 
 
-	data := []byte(`{"password": "Kailash123"}`)
+	data := []byte(`{"password": ""}`)
 	datavar := bytes.NewBuffer(data)
 	client := &http.Client{}
 	resp, err := client.Post(url+path+"/"+username, "application/json", datavar)
