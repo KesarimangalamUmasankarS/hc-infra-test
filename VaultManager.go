@@ -6,8 +6,7 @@ import (
 	"reflect"
 )
 
-/* Receive a token from Vault for the specified user - Axxxxxx
-   Upon receiving the V-Vault-Token, send the token as a header to pull the secrets from Vault*/
+/* Receive a token from Vault for the specified user - Axxxxxx  */
 
 func main() {
 
@@ -31,6 +30,9 @@ func main() {
 		}
 	}
 
+	/* Upon receiving the Vault-Token, send the token as a header to perform health check on the Vault system.
+	   Status code 200 is considered active. Status code 429 is also considered active if the Vault system is behind a load balancer */
+
 
 	health_check_status_code := libraries.GetHealth(x_vault_token)
 	if(health_check_status_code != 200 && health_check_status_code != 429) {
@@ -42,7 +44,7 @@ func main() {
 		fmt.Println("Vault "+ env + " environment is active and the status code returned is ", health_check_status_code)
 	}
 
-
+	/* Vault token is also sent to retrieve secrets from the path specified in data.file */
 
 	secret_JSON := libraries.GetSecret(x_vault_token)
 	for _, jsonvalue := range secret_JSON {

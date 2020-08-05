@@ -4,8 +4,6 @@
     <list default="true" id="99bbd4b0-6c5e-4443-98d8-1e34a5d0db02" name="Default Changelist" comment="Go Code to open a session with AWS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VaultManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/VaultManager.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.file" beforeDir="false" afterPath="$PROJECT_DIR$/data.file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/getSecrets.go" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/getSecrets.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraries/connectVault.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="15">
+              <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VaultManager.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="439">
+              <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -94,8 +92,8 @@
         <option value="$PROJECT_DIR$/config.file" />
         <option value="$PROJECT_DIR$/data.file" />
         <option value="$PROJECT_DIR$/libraries/getSecrets.go" />
-        <option value="$PROJECT_DIR$/VaultManager.go" />
         <option value="$PROJECT_DIR$/libraries/connectVault.go" />
+        <option value="$PROJECT_DIR$/VaultManager.go" />
       </list>
     </option>
   </component>
@@ -139,7 +137,7 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596631802431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596632394768" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -192,7 +190,7 @@
       <workItem from="1596230470224" duration="624000" />
       <workItem from="1596309259364" duration="10000" />
       <workItem from="1596463128804" duration="14115000" />
-      <workItem from="1596549948429" duration="7020000" />
+      <workItem from="1596549948429" duration="7357000" />
     </task>
     <task id="LOCAL-00001" summary="Go Code to open a session with AWS">
       <created>1595856471285</created>
@@ -212,7 +210,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45027000" />
+    <option name="totallyTimeSpent" value="45364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1792" height="1120" extended-state="0" />
@@ -303,24 +301,10 @@
     <entry file="file://$PROJECT_DIR$/awsSession/awsSession.go" />
     <entry file="file://$PROJECT_DIR$/awsSession/src/awsSession.go" />
     <entry file="file://$PROJECT_DIR$/config" />
-    <entry file="file://$PROJECT_DIR$/data.file">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.file">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VaultManager.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -333,8 +317,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/connectVault.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="15">
+          <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.file">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VaultManager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
         </state>
       </provider>
     </entry>
