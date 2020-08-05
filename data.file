@@ -1,3 +1,4 @@
 #Data#
+health_check_path=sys/health?standby=false
 secretpath=kv/qa/testMember
-secret=password
+label=password

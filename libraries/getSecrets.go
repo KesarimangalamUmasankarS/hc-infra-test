@@ -21,7 +21,7 @@ func GetSecret(x_vault_token string) map[string]interface{}{
 	url := GetConfig("url_"+env)
 
 	client := &http.Client{}
-	req, _ := http.NewRequest("POST", url+path, nil)
+	req, _ := http.NewRequest("GET", url+path, nil)
 	req.Header.Set("X-Vault-Token", x_vault_token)
 	resp, err := client.Do(req)
 
@@ -59,4 +59,24 @@ func GetData(key string) string{
 		}
 	}
 	return value[1]
+}
+
+func  GetHealth(x_vault_token string) int {
+	path := GetData("health_check_path")
+	env := GetConfig("environment")
+	url := GetConfig("url_"+env)
+
+	client := &http.Client{}
+	req, _ := http.NewRequest("GET", url+path, nil)
+	req.Header.Set("X-Vault-Token", x_vault_token)
+	resp, err := client.Do(req)
+
+	if err != nil {
+		panic(err)
+	}
+
+	defer resp.Body.Close()
+
+	client.CloseIdleConnections()
+	return resp.StatusCode
 }
